@@ -12,14 +12,12 @@
 
 .loginForm-content__form{
     margin: auto;
+    width: 263%;
 }
 
 .loginForm-content__form-input{
     width: 65%;
     height: 3rem;
-}
-
-.loginForm-content__form-label{
 }
 
 .loginForm-content__submit{

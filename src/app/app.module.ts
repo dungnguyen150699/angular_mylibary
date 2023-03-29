@@ -11,6 +11,7 @@ import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { NavModulModuleComponent } from './nav-modul/nav-modul.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
@@ -21,6 +22,10 @@ import { IconDefinition } from '@ant-design/icons-angular';
 import { Oauth2RedirectComponent } from './oauth2-redirect/oauth2-redirect.component';
 import { CartComponent } from './cart/cart.component';
 import { NavModulModule } from './nav-modul/nav-modul.module';
+import { ToastrModule } from 'ngx-toastr';
+import { BookComponent } from './book/book.component';
+import { NodeChildComponent } from './nav-modul/node-child/node-child.component';
+import { BookelementComponent } from './book/bookelement/bookelement.component';  
 
 registerLocaleData(en);
 
@@ -36,7 +41,11 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     LoginComponent,
     SignupComponent,
     Oauth2RedirectComponent,
-    CartComponent
+    CartComponent,
+    NavModulModuleComponent,
+    BookComponent,
+    NodeChildComponent,
+    BookelementComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +57,9 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     HttpClientModule,
     BrowserAnimationsModule,
     //  antd
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    //  ngx toast
+    ToastrModule.forRoot()
   ],
   providers: [ { provide: NZ_I18N, useValue: en_US }, { provide: NZ_ICONS, useValue: icons } ],
   bootstrap: [AppComponent]

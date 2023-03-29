@@ -5,7 +5,9 @@ import { NavModulRoutingModule } from './nav-modul-routing.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    // NavModulModuleComponent // Phải declaration trong appModul thì nó mới ăn antd ??
+  ],
   imports: [
     CommonModule,
     NavModulRoutingModule
