@@ -9,7 +9,6 @@ export class AppComponent implements OnInit{
   title = 'ng-router';
   
   ngOnInit = () => {
-    console.log("xxx");
-    console.log('typeOf Component',typeof this);
+  
   }
 }

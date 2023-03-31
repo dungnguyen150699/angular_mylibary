@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "f7fdebe8-a4db-4b6b-9e50-8c56280f2974"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -24,10 +27,20 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ng-zorro-antd/resizable/style/index.min.css",
+              "node_modules/ng-zorro-antd/code-editor/style/index.min.css",
+              "node_modules/ng-zorro-antd/graph/style/index.min.css"
             ],
             "scripts": []
           },
@@ -94,7 +107,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ng-zorro-antd/resizable/style/index.min.css",
+              "node_modules/ng-zorro-antd/code-editor/style/index.min.css",
+              "node_modules/ng-zorro-antd/graph/style/index.min.css"
             ],
             "scripts": []
           }
