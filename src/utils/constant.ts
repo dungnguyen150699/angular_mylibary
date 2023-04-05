@@ -1,5 +1,4 @@
 import { LoginComponent } from '../app/login/login.component';
-import { SignupComponent } from '../app/signup/signup.component';
 import { Oauth2RedirectComponent } from '../app/oauth2-redirect/oauth2-redirect.component';
 import { HttpHeaders } from "@angular/common/http";
 

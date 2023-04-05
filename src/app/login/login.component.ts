@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.setValueLoginForm();
+    // this.setValueLoginForm();
   }
 
   setValueLoginForm = () =>{

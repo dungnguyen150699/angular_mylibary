@@ -44,7 +44,7 @@ nz-content{
 }
 
 .menu_right{
-    margin-left: 17%;
+    margin-left: 20%;
     /* padding-top: 5%; */
     display: flex;
     justify-content: flex-start;
@@ -110,4 +110,39 @@ nz-content{
     left: -7px;
     width: 1px;
     height: 100%;
+}
+
+.menu_right__translate{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu_right__translate{
+    padding-right: 5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.menu_right__translate__itemImages{
+    width: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    top: 1.3rem;
+    cursor: pointer;
+}
+
+.menu_right__translate__itemImage{
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+}
+
+.menu_right__translate__itemImage--vi{
+    background-image: url("../../assets/img/vietnam.png");
+}
+
+.menu_right__translate__itemImage--en{
+    background-image: url("../../assets/img/united-kingdom.png");
 }

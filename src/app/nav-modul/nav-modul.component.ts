@@ -6,6 +6,7 @@ import { ACCESS_TOKEN } from 'src/utils/constant';
 import { User } from 'src/utils/types';
 import { CategoryDTO } from '../model/CategoryDTO';
 import { NavModulService } from './nav-modul.service';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav-modul.component.html',
@@ -14,7 +15,16 @@ import { NavModulService } from './nav-modul.service';
 export class NavModulModuleComponent implements OnInit {
   categorys: CategoryDTO[] = new Array();
 
-  constructor(public navModulService:NavModulService,private toastr:ToastrService,private route:ActivatedRoute) { 
+  constructor(
+    public navModulService:NavModulService,
+    private toastr:ToastrService,
+    private route:ActivatedRoute,
+    private translateService: TranslateService
+    ) { 
+  }
+
+  selectLanguage = (localize: string) => {
+    this.translateService.use(localize);
   }
 
   ngOnInit(): void {

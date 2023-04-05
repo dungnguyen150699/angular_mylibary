@@ -25,6 +25,12 @@
     display: block;
 }
 
+.signUp{
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Social  */
 
 .loginForm__split-social{
